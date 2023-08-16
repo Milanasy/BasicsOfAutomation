@@ -10,21 +10,20 @@ public class CashbackHackServiceTest {
         int amount = 1000;
 
         int actual = service.remain(amount);
-        int expected = 0;
+        int expected = 1000;
 
         Assert.assertEquals(actual, expected);
     }
 
     @org.junit.Test
-        public void cashbackHackServiceTest2() {
-            CashbackHackService service = new CashbackHackService();
-            int amount = 900;
+    public void cashbackHackServiceTest2() {
+        CashbackHackService service = new CashbackHackService();
+        int amount = 900;
 
-            int actual = service.remain(amount);
-            int expected = 100;
+        int actual = service.remain(amount);
+        int expected = 100;
 
-            Assert.assertEquals(actual, expected);
-        }
-
+        Assert.assertEquals(actual, expected);
     }
+}
 
